@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="SplashScreenTitle">48sp</dimen>
+    <dimen name="TopTitle">30sp</dimen>
+    <dimen name="ListItem">24sp</dimen>
+    <dimen name="ListItemPadding">12sp</dimen>
+    <dimen name="ImagePadding">12sp</dimen>
+    <dimen name="TextPadding">12sp</dimen>
+    <dimen name="CreditsText">18sp</dimen>
+    <dimen name="CreditsTextPadding">10sp</dimen>
+    <dimen name="TableHeader">24sp</dimen>
+    <dimen name="TableContent">18sp</dimen>
+    <dimen name="TextField">22sp</dimen>
+    <dimen name="TextEdit">18sp</dimen>
+    <dimen name="QuestionText">22sp</dimen>
+</resources>

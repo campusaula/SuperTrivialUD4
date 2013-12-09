@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="servers">
+    	<item>"None"</item>
+    	<item>"dakkon.disca.upv.es"</item>
+    	<item>"test server (not working!")"</item>
+    </string-array>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_height="wrap_content" android:layout_width="fill_parent">
+        <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:src="@drawable/questionlefticon"></ImageView>
+        <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerVertical="true" android:textColor="@color/red" android:textSize="@dimen/TopTitle" android:textStyle="bold" android:text="@string/credits_screen_title"></TextView>
+        <ImageView android:id="@+id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:src="@drawable/questionrighticon"></ImageView>
+    </RelativeLayout>
+    <LinearLayout android:id="@+id/linearLayout1" 
+        android:layout_height="fill_parent" 
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="86dp"
+            android:layout_height="108dp"
+            android:layout_gravity="center"
+            android:padding="@dimen/ImagePadding"
+            android:src="@drawable/nestor" >
+
+        </ImageView>
+        <LinearLayout android:orientation="vertical" 
+            android:id="@+id/linearLayout2" 
+            android:layout_width="wrap_content" 
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/tvCredits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               
+                android:gravity="center" 
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

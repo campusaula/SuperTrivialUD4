@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_height="wrap_content" android:layout_width="fill_parent">
+        <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:src="@drawable/questionlefticon"></ImageView>
+        <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerVertical="true" android:textColor="@color/red" android:textSize="@dimen/TopTitle" android:textStyle="bold" android:text="@string/play_screen_title"></TextView>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:src="@drawable/questionrighticon" android:id="@+id/ivNumbers"></ImageView>
+    </RelativeLayout>
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal" android:id="@+id/linearLayout3">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/score_text" android:textColor="@color/red" android:textSize="@dimen/TextField" android:textStyle="bold" android:layout_alignParentBottom="true" android:id="@+id/textView2"></TextView>
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="@color/red" android:textSize="@dimen/TextField" android:textStyle="bold" android:layout_marginLeft="@dimen/TextPadding" android:text="@string/zero" android:id="@+id/tvCurrentScore"></TextView>
+        <TextView android:textColor="@color/red" android:layout_width="wrap_content" android:id="@+id/textView3" android:layout_height="wrap_content" android:text="@string/time_text" android:textStyle="bold" android:textSize="@dimen/TextField" android:paddingLeft="@dimen/TextPadding"></TextView>
+        <ProgressBar android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:max="@integer/MaxTime" android:id="@+id/pbTime" android:layout_width="fill_parent" style="?android:attr/progressBarStyleHorizontal"></ProgressBar>
+    </LinearLayout>
+    <TextView android:textColor="@color/red" android:id="@+id/tvQuestion" android:textSize="@dimen/QuestionText" android:layout_width="fill_parent" android:text="Question" android:layout_height="wrap_content" android:gravity="center_horizontal"></TextView>
+    <ScrollView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/scrollView1">
+        <LinearLayout android:layout_height="match_parent" android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent">
+            <Button android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="Answer1" android:id="@+id/bAnswer1" android:textSize="@dimen/TextEdit"></Button>
+            <Button android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="Answer2" android:id="@+id/bAnswer2" android:textSize="@dimen/TextEdit"></Button>
+            <Button android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="Answer3" android:id="@+id/bAnswer3" android:textSize="@dimen/TextEdit"></Button>
+            <Button android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="Answer4" android:id="@+id/bAnswer4" android:textSize="@dimen/TextEdit"></Button>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/linearLayout2" android:orientation="horizontal">
+    </LinearLayout>
+</LinearLayout>

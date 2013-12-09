@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/background">
+	<RelativeLayout android:id="@+id/relativeLayout1"
+		android:layout_height="wrap_content" android:layout_width="fill_parent">
+		<ImageView android:id="@+id/imageView1"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+			android:src="@drawable/questionlefticon"></ImageView>
+		<TextView android:id="@+id/textView1" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_centerInParent="true"
+			android:layout_centerVertical="true" android:text="@string/settings_screen_title"
+			android:textColor="@color/red" android:textSize="@dimen/TopTitle"
+			android:textStyle="bold"></TextView>
+		<ImageView android:id="@+id/imageView2"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+			android:src="@drawable/questionrighticon"></ImageView>
+	</RelativeLayout>
+	<ScrollView android:layout_height="wrap_content" android:id="@+id/scrollView1" android:layout_width="match_parent">
+		<LinearLayout android:layout_height="fill_parent" android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_width="fill_parent">
+			<TextView android:textColor="@color/red" android:layout_width="wrap_content" android:id="@+id/textView2" android:layout_height="wrap_content" android:text="@string/username_text" android:textStyle="bold" android:textSize="@dimen/TextField"></TextView>
+			<EditText android:textSize="@dimen/TextEdit" android:id="@+id/etUserName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textStyle="italic">
+				<requestFocus></requestFocus>
+			</EditText>
+			<TextView android:textColor="@color/red" android:layout_width="wrap_content" android:id="@+id/textView3" android:layout_height="wrap_content" android:text="@string/email_address_text" android:textStyle="bold" android:textSize="@dimen/TextField"></TextView>
+			<EditText android:textSize="@dimen/TextEdit" android:id="@+id/etEmailAddress" android:layout_width="fill_parent" android:inputType="textEmailAddress" android:layout_height="wrap_content" android:textStyle="italic"></EditText>
+			<TextView android:textColor="@color/red" android:layout_width="wrap_content" android:id="@+id/textView5" android:layout_height="wrap_content" android:text="@string/questions_preferences_text" android:textStyle="bold" android:textSize="@dimen/TextField"></TextView>
+			<LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout2" android:layout_width="fill_parent" android:orientation="horizontal">
+				<Button android:layout_gravity="center" android:layout_width="wrap_content" android:id="@+id/bQuestionsPreferences" android:layout_height="wrap_content" android:text="@string/select_questions_button"></Button>
+				<TextView android:layout_gravity="center" android:gravity="center" android:textColor="@color/red" android:layout_width="fill_parent" android:id="@+id/tvQuestionsPreferences" android:layout_height="wrap_content" android:text="@string/questions_preferences_not_set" android:textStyle="italic" android:textSize="@dimen/TextEdit"></TextView>
+			</LinearLayout>
+			<TextView android:textColor="@color/red" android:layout_width="wrap_content" android:id="@+id/textView4" android:layout_height="wrap_content" android:text="@string/questions_server_text" android:textStyle="bold" android:textSize="@dimen/TextField"></TextView>
+			<Spinner android:layout_height="wrap_content" android:entries="@array/servers" android:id="@+id/spinner1" android:layout_width="fill_parent">
+			</Spinner>
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>
